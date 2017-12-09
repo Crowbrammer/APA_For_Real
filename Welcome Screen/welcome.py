@@ -42,11 +42,6 @@ class WelcomeApp(App):
         # height = Window.height
         # width = Window.width
         return root
-    def Window_Size():
-        print("HEY, LISTEN: \n\n Window.height:", Window.height)
-        window_size = Window.height, Window.width
-        return window_size
-
 if __name__ == '__main__':
 	WelcomeApp().run()
 
