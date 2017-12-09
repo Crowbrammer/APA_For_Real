@@ -1,32 +1,41 @@
-BoxLayout:
-    BestScrollView:
 
-        size_hint: 1, None
-        size: self.getWindowSize()
+BestScrollView:
 
-        BoxLayout:
+    do_scroll: True
 
-            padding: self.width * 0.090
-            orientation: "vertical"
-            canvas.before:
-                Color:
-                    rgba: 1, 1, 1, .618
-                Rectangle:
-                    # self here refers to the widget i.e FloatLayout
-                    pos: self.pos
-                    size: self.size
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, .618
+        Rectangle:
+            # self here refers to the widget i.e FloatLayout
+            pos: self.pos
+            size: self.size
 
-            Image:
-                size_hint_y: 0.236
-                source: "assets/UnderstatedLogo.png"
+    orientation: "vertical"
+
+    GridLayout:
+
+        cols: 1
+        padding: self.width * 0.090
+        spacing: 10
+        size_hint: None, 1
+        width: 500
+        height: self.minimum_height
+
+        orientation: "vertical"
+
+
+        Image:
+            size_hint_y: 0.236
+            source: "assets/UnderstatedLogo.png"
 
 
 
-            Label:
-                text_size: self.size
-                font_name: "font/BarlowSemiCondensed-Regular.ttf"
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non lacus in odio efficitur iaculis. Vivamus at velit sed libero tempor lobortis nec in turpis. Nunc ac nibh vel justo tempus condimentum et id ante. Integer porta orci dolor, id posuere sapien tincidunt non. Nunc lobortis ante felis, dignissim cursus nulla lacinia nec. Duis viverra ligula non nunc tristique suscipit. Suspendisse elit odio, pellentesque in condimentum sodales, porta ut diam. Nulla consequat auctor est non dapibus. Aenean placerat, leo a facilisis auctor, lacus nisi gravida velit, et interdum mi augue vitae mi. Duis eu molestie odio, non posuere nulla. Aliquam erat volutpat. \n\nDonec lacinia dignissim felis, sed congue urna consectetur convallis. Maecenas id tortor magna. Quisque facilisis, nulla vel suscipit vulputate, turpis ligula mollis orci, quis posuere velit metus a orci. Sed velit tortor, ornare auctor nisi ac, laoreet scelerisque quam. Sed laoreet ipsum nec lobortis congue. Sed elementum cursus metus. Ut ut orci sed nulla tristique convallis. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non lacus in odio efficitur iaculis. Vivamus at velit sed libero tempor lobortis nec in turpis. Nunc ac nibh vel justo tempus condimentum et id ante. Integer porta orci dolor, id posuere sapien tincidunt non. Nunc lobortis ante felis, dignissim cursus nulla lacinia nec. Duis viverra ligula non nunc tristique suscipit. Suspendisse elit odio, pellentesque in condimentum sodales, porta ut diam. Nulla consequat auctor est non dapibus. Aenean placerat, leo a facilisis auctor, lacus nisi gravida velit, et interdum mi augue vitae mi. Duis eu molestie odio, non posuere nulla. Aliquam erat volutpat. \n\nDonec lacinia dignissim felis, sed congue urna consectetur convallis. Maecenas id tortor magna. Quisque facilisis, nulla vel suscipit vulputate, turpis ligula mollis orci, quis posuere velit metus a orci. Sed velit tortor, ornare auctor nisi ac, laoreet scelerisque quam. Sed laoreet ipsum nec lobortis congue. Sed elementum cursus metus. Ut ut orci sed nulla tristique convallis."
-            # Button:
-            #     text: 'Hello World!!'
-            #     size_hint: .5, .5
-            #     pos_hint: {'center_x':.5, 'center_y': .5}
+        Label:
+            text_size: self.size
+            font_name: "font/BarlowSemiCondensed-Regular.ttf"
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non lacus in odio efficitur iaculis. Vivamus at velit sed libero tempor lobortis nec in turpis. Nunc ac nibh vel justo tempus condimentum et id ante. Integer porta orci dolor, id posuere sapien tincidunt non. Nunc lobortis ante felis, dignissim cursus nulla lacinia nec. Duis viverra ligula non nunc tristique suscipit. Suspendisse elit odio, pellentesque in condimentum sodales, porta ut diam. Nulla consequat auctor est non dapibus. Aenean placerat, leo a facilisis auctor, lacus nisi gravida velit, et interdum mi augue vitae mi. Duis eu molestie odio, non posuere nulla. Aliquam erat volutpat. \n\nDonec lacinia dignissim felis, sed congue urna consectetur convallis. Maecenas id tortor magna. Quisque facilisis, nulla vel suscipit vulputate, turpis ligula mollis orci, quis posuere velit metus a orci. Sed velit tortor, ornare auctor nisi ac, laoreet scelerisque quam. Sed laoreet ipsum nec lobortis congue. Sed elementum cursus metus. Ut ut orci sed nulla tristique convallis. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non lacus in odio efficitur iaculis. Vivamus at velit sed libero tempor lobortis nec in turpis. Nunc ac nibh vel justo tempus condimentum et id ante. Integer porta orci dolor, id posuere sapien tincidunt non. Nunc lobortis ante felis, dignissim cursus nulla lacinia nec. Duis viverra ligula non nunc tristique suscipit. Suspendisse elit odio, pellentesque in condimentum sodales, porta ut diam. Nulla consequat auctor est non dapibus. Aenean placerat, leo a facilisis auctor, lacus nisi gravida velit, et interdum mi augue vitae mi. Duis eu molestie odio, non posuere nulla. Aliquam erat volutpat. \n\nDonec lacinia dignissim felis, sed congue urna consectetur convallis. Maecenas id tortor magna. Quisque facilisis, nulla vel suscipit vulputate, turpis ligula mollis orci, quis posuere velit metus a orci. Sed velit tortor, ornare auctor nisi ac, laoreet scelerisque quam. Sed laoreet ipsum nec lobortis congue. Sed elementum cursus metus. Ut ut orci sed nulla tristique convallis."
+        # Button:
+        #     text: 'Hello World!!'
+        #     size_hint: .5, .5
+        #     pos_hint: {'center_x':.5, 'center_y': .5}

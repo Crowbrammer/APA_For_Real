@@ -4,18 +4,16 @@
 # ^ Look at how I did it before, and model that approach
 # ^ Put the BoxLayout inside a ScrollView and get it in there.
 
-# Don't really get how to properly use Git
-# ^ Get a Repo created and get everything on there
-# ^ Follow a flow from there
-
-
+# Basically the text is scrolling left to right, and
+# ^ Look up other, basic examples of the ScrollView
 
 
 # Can I have the welcome screen "pop up" on top of the main screen, instead
 # of showing a totally new screen?
 
 
-from imports import App, Builder, Image, BoxLayout, ScrollView, Window
+from imports import App, Builder, Image, BoxLayout, ScrollView, Window, \
+    GridLayout
 
 print("\n \n APP START \n \n ")
 
@@ -51,6 +49,13 @@ class WelcomeApp(App):
 
 if __name__ == '__main__':
 	WelcomeApp().run()
+
+# SOLVED it shows black after scrolling past a certain limit.
+# ^ Update the canvas behind the ScrollView
+
+# SOLVED Don't really get how to properly use Git
+# ^ Get a Repo created and get everything on there
+# ^ Follow a flow from there
 
 # SOLVED Don't know haw to connect Kivy files and Python files functionally--don't
 # know how to intermingle data between the two
