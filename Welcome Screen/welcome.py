@@ -46,7 +46,7 @@ aoeu = Label(text=linestring, text_size=(Window.width * 0.618, None), size_hint_
 layoutWithinSV.add_widget(aoeu)
 
 #(sv)
-sv = ScrollView(size_hint=(1, None), size=(Window.width, Window.height * (0.618+0.236)))
+sv = ScrollView(size_hint=(1, None), size=(Window.width, Window.height * (0.618+0.236)), bar_color=(0,0,0,0), bar_inactive_color=(0,0,0,0))
 sv.add_widget(layoutWithinSV)
 
 # rootLayout
