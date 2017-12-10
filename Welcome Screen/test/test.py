@@ -3,6 +3,9 @@
 # Don't know how to do this with Kivy
 # ^ Try to translate as much of this to Kivy as possible - see if I can get it to work.
 
+# Don't know how to set the minimum size of a widget in KVLang
+# ^ Try explicitly understanding
+
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.button import Button
 from kivy.uix.scrollview import ScrollView

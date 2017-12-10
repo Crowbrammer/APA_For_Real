@@ -32,21 +32,21 @@ class WrappedLabel(object):
 linestring = open('text.txt', 'r').read()
 
 #rootLayout
-rootLayout = BoxLayout(orientation="vertical", padding = (Window.width * ((1-0.618)/2), 20))
+rootLayout = BoxLayout(orientation="vertical", spacing= 10, padding = (Window.width * ((1-0.618)/2), 20))
 
 #imageLayout
 imageLayout = BoxLayout()
 imageLayout.add_widget(Image(source="assets/UnderstatedLogo.png"))
 
 #layoutWithinSV
-layoutWithinSV = GridLayout(cols=1, spacing=10, size_hint_y=None, padding = (0, 200))
+layoutWithinSV = GridLayout(cols=1, spacing=10, size_hint=(1, None), padding = (0, 160))
 layoutWithinSV.bind(minimum_height=layoutWithinSV.setter('height'))
 aoeu = Label(text=linestring, text_size=(Window.width * 0.618, None), size_hint_y=None, height = Window.height * 1.618, width = Window.height * 0.618, \
                 valign="bottom")
 layoutWithinSV.add_widget(aoeu)
 
 #(sv)
-sv = ScrollView(size_hint=(0.618, None), size=(Window.width, Window.height * (0.618+0.236)))
+sv = ScrollView(size_hint=(1, None), size=(Window.width, Window.height * (0.618+0.236)))
 sv.add_widget(layoutWithinSV)
 
 # rootLayout
